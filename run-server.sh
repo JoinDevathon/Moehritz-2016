@@ -1,5 +1,15 @@
 #!/bin/bash
 
+echo "due to a complete lack of ideas, I will stop particpating."
+echo "i did like a way to place a machine, because I did not know what machine to make, tough"
+echo "basically it's just some particles in front of you"
+echo "but if you want to see them, you can!"
+read -n 1 -p "do you really want to? (y/n) " value
+if [ "$value" == "n" ]; then
+    echo "    No? A wise decicision has been made, bye!"
+    exit
+fi
+
 if [ ! -d "build" ]; then
     echo "Spigot is not downloaded, downloading and building now.."
     rm -rf build/

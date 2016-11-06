@@ -11,6 +11,8 @@ public class DevathonPlugin extends JavaPlugin {
         getLogger().info("Loading my fantastic machine!");
 
         instance = this;
+
+        getServer().getPluginManager().registerEvents(new PlaceMachineListener(), this);
     }
 
     @Override
